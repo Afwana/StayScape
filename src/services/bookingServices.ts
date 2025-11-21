@@ -27,12 +27,10 @@ export const getBookingById = async (bookingId: string) => {
 
 export const updateBookingStatus = async (
   bookingId: string,
-  status: string,
-  cancellationReason?: string
+  status: string
 ) => {
-  const response = await apiClient.patch(`/bookings/${bookingId}`, {
+  const response = await apiClient.patch(`/bookings/${bookingId}/status`, {
     status,
-    cancellationReason,
   });
   return response.data;
 };
