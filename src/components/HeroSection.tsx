@@ -1,10 +1,10 @@
 import Header from "./Header";
 import background from "../assets/background.jpg";
-import gridImage1 from "../assets/Image4.jpg";
-import gridImage2 from "../assets/Image1.jpg";
-import gridImage3 from "../assets/Image3.jpg";
-import gridImage4 from "../assets/Image2.jpg";
-import gridImage5 from "../assets/Image5.jpg";
+import gridImage1 from "../assets/image4.jpg";
+import gridImage2 from "../assets/image1.jpg";
+import gridImage3 from "../assets/image3.jpg";
+import gridImage4 from "../assets/image2.jpg";
+import gridImage5 from "../assets/image5.jpg";
 
 const GridImages = [gridImage1, gridImage2, gridImage3, gridImage4, gridImage5];
 
