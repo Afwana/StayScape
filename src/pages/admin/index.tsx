@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useMemo, useState } from "react";
-import Header from "../../components/Header";
+import logo2 from "../../assets/logo/logo2.png";
 import {
   deleteBooking,
   getAllBookings,
@@ -10,7 +10,7 @@ import type { Booking } from "../../types/booking";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { LuArrowUpDown } from "react-icons/lu";
 import { TbArrowNarrowDown, TbArrowNarrowUp } from "react-icons/tb";
-import { FaTrashAlt } from "react-icons/fa";
+import { FaHome, FaTrashAlt } from "react-icons/fa";
 
 interface SortConfig {
   key: string | null;
@@ -297,7 +297,26 @@ export default function AdminPage() {
   }
   return (
     <div className="flex flex-col w-full">
-      <Header />
+      <header className="">
+        <nav
+          aria-label="Global"
+          className="flex max-w-full items-center justify-between p-6 lg:px-8">
+          <div className="flex lg:flex-1">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">StayScape</span>
+              <img src={logo2} alt="" className="h-20 w-auto" />
+            </a>
+          </div>
+
+          <a href="/" className="flex flex-1 justify-end">
+            <div className="bg-gray-900 rounded-lg p-3">
+              <div className="text-base font-semibold text-white">
+                <FaHome size={28} />
+              </div>
+            </div>
+          </a>
+        </nav>
+      </header>
       <div className="bg-white shadow-xl rounded-lg overflow-hidden">
         {/* Header with filters */}
         <div className="px-6 py-4 border-b border-gray-200">
